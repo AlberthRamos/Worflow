@@ -48,8 +48,7 @@ export const TestimonialCard = ({ name, role, company, content, rating, delay = 
             initial={{ opacity: 0, scale: 0 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.3, delay: delay + (i * 0.1) }}
-            whileHover={{ scale: 1.2, rotate: 360 }}
-            transition={{ type: "spring", stiffness: 200, damping: 10 }}
+            whileHover={{ scale: 1.2, rotate: 360, transition: { type: "spring", stiffness: 200, damping: 10 } }}
           >
             <Star 
               className={`w-4 h-4 ${i < rating ? 'text-primary fill-primary' : 'text-white/20'}`}

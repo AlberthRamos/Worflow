@@ -11,7 +11,7 @@ interface AdvancedTickerProps {
   intensity?: 'subtle' | 'normal' | 'strong';
 }
 
-const AdvancedTicker: React.FC<AdvancedTickerProps> = ({
+export const AdvancedTicker: React.FC<AdvancedTickerProps> = ({
   texts,
   speed = 50,
   direction = 'left',
@@ -159,4 +159,3 @@ const AdvancedTicker: React.FC<AdvancedTickerProps> = ({
   );
 };
 
-export default AdvancedTicker;
